@@ -6,13 +6,27 @@
 
 <div class="row list-row">
 	<div class="col-md-2"></div>
-	<div class="col-md-4 one-list"></div>
-	<div class="col-md-4 one-list"></div>
+	<div class="col-md-8 one-list">
+        <div class="form-group row list-elements" ng-repeat="(key,value) in tasks">
+            <div class="row"  ng-if="value.deleted==false">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-change="saveData()" ng-model="value.task">
+                </div>
+                <div class="col-sm-1">
+                    <input type="checkbox" class="form-control" ng-change="saveData()" ng-model="value.done">
+                </div>
+                <div class="col-sm-1">
+                    <button class="btn" ng-click="deleteElement(key)">X</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn add-element-button" ng-click="addElement()">Add element</button>
+	</div>
 	<div class="col-md-2"></div>
 </div>
 
 <div class="row header">
 	<div class="col-md-12">
-		<button class="btn">ADD NEW LIST</button>
+		<button class="btn " ng-click="addNewList()">ADD NEW LIST</button>
 	</div>
 </div>

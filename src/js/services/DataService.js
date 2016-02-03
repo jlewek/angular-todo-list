@@ -23,5 +23,15 @@ angular.module('todoList').service('DataService',function() {
 
 	*/
 
-	
+    this.getToDoList=function(){
+        var todoList=getObject('todoList');
+        if(todoList==null){
+            todoList=new Array();
+        }
+        return todoList;
+    };
+
+    this.setToDoList=function(listObject){
+        saveObject('todoList',listObject)
+    }
 });

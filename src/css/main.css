@@ -11,3 +11,12 @@
 	min-height: 400px;
 	margin:5px;
 }
+
+.list-elements{
+    margin:5px;
+}
+
+.add-element-button{
+    margin:5px;
+    width:100%;
+}
