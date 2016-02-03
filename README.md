@@ -1,1 +1,3 @@
-App created to making todo list
+App avible at http://todo-list24.com/
+
+This simple app is create at AngularJS.
