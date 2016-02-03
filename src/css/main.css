@@ -20,3 +20,21 @@
     margin:5px;
     width:100%;
 }
+
+.list-name-input{
+    min-height:50px;
+    background-color:#FAEBD7;
+    width:100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.list-name-div{
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.remove-list-button{
+    margin-top:10px;
+    background-color: #FF6633;
+}

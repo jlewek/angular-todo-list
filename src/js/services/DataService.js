@@ -28,6 +28,7 @@ angular.module('todoList').service('DataService',function() {
         if(todoList==null){
             todoList=new Array();
         }
+
         return todoList;
     };
 
