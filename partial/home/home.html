@@ -4,6 +4,14 @@
 	</div>
 </div>
 
+<div class="row header">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <input type="text" class="form-control search-input" placeholder="Search list" ng-model="searchString">
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
 <div class="row list-row" ng-repeat="(listKey,listValue) in tasks">
 	<div class="col-md-2"></div>
 	<div class="col-md-8 one-list">

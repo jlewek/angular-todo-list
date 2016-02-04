@@ -34,5 +34,5 @@ angular.module('todoList').service('DataService',function() {
 
     this.setToDoList=function(listObject){
         saveObject('todoList',listObject)
-    }
+    };
 });
