@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-12 header">
-		<h1>TODO 24</h1>
+		<h1>ToDo LIST</h1>
 	</div>
 </div>
 
@@ -8,23 +8,23 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8 one-list">
         <div class="row">
+            <div class="col-sm-1 remove-list-space">
+                <button class="btn remove-list-button" ng-click="deleteList(listKey)">X</button>
+            </div>
             <div class="col-sm-11 list-name-div">
                 <input type="text" class="form-control list-name-input" ng-change="saveData()" ng-model="listValue.name">
-            </div>
-            <div class="col-sm-1">
-                <button class="btn remove-list-button" ng-click="deleteList(listKey)">X</button>
             </div>
         </div>
         <div class="form-group row list-elements" ng-repeat="(key,value) in listValue.elements">
             <div class="row"  ng-if="value.deleted==false">
-                <div class="col-sm-10">
+                <div class="col-md-10">
                     <input type="text" class="form-control" ng-change="saveData()" ng-model="value.task">
                 </div>
-                <div class="col-sm-1">
-                    <input type="checkbox" class="form-control" ng-change="saveData()" ng-model="value.done">
+                <div class="col-md-1">
+                    <input class="form-control item-btn" type="checkbox" ng-change="saveData()" ng-model="value.done">
                 </div>
-                <div class="col-sm-1">
-                    <button class="btn" ng-click="deleteElement(key,listKey)">X</button>
+                <div class="col-md-1">
+                    <button class="btn item-btn" ng-click="deleteElement(key,listKey)">X</button>
                 </div>
             </div>
         </div>
@@ -39,8 +39,6 @@
 	</div>
 </div>
 
-<div class="row footer">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">Open source AngularJS application by <a href="http://jlewek.pl/">jlewek.pl</a>.</div>
-    <div class="col-md-4"></div>
+<div class="row">
+    <div class="col-md-12 footer">Open source AngularJS application by <a href="http://jlewek.pl/">jlewek.pl</a>.</div>
 </div>
